@@ -21,6 +21,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="{{ SITEURL }}/index.html">CGRAN</a>
+            <a class="navbar-brand" href="{{ SITEURL }}/projects">Projects</a>
         </div>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -31,9 +32,12 @@
                     <li><a href="https://gnuradio.org/redmine/projects/pybombs/wiki/Contributing">Submit OOT Module</a></li>
                     <li class="divider"></li>
                     <li><a href="http://gnuradio.org/redmine/projects/pybombs/wiki">PyBOMBS Wiki</a></li>
-		    <li><a href="https://gnuradio.org/doc/doxygen/index.html">GNU Radio Manual</a></li>
-	        </ul>
+            	    <li><a href="https://gnuradio.org/doc/doxygen/index.html">GNU Radio Manual</a></li>
+                    <li class="divider"></li>
+            	    <li><a href="http://libvolk.org/doxygen/index.html">VOLK Documentation</a></li>
+                </ul>
                 <li><a href="https://www.gnuradio.org/redmine/projects/gnuradio/wiki">GNU Radio</a></li>
+                <li><a href="http://libvolk.org/">VOLK</a></li>
         </div>
     </div>
 </div>
@@ -51,18 +55,18 @@
 <script src="{{ SITEURL }}/theme/js/material.min.js"></script>
 <script src="{{ SITEURL }}/theme/js/ripples.min.js"></script>
 <script>
-            $(document).ready(function() {
-                $.material.init();
-            });
+  $(document).ready(function() {
+      $.material.init();
+  });
 </script>
 <script>
-$(function () {
-		    $('#tableId').bootstrapTable(); // init via javascript
-
-		        $(window).resize(function () {
-				        $('#tableId').bootstrapTable('resetView');
-					    });
-			});
+  $(function () {
+    $('#tableId').bootstrapTable(); // init via javascript
+    
+    $(window).resize(function () {
+      $('#tableId').bootstrapTable('resetView');
+    });
+  });
 </script>
 <script>
 jQuery.fn.bootstrapTable.defaults.icons = { paginationSwitchDown: "fa fa-chevron-down",
@@ -73,7 +77,8 @@ jQuery.fn.bootstrapTable.defaults.icons = { paginationSwitchDown: "fa fa-chevron
 </script>
 </body>
 <footer>
-<div class="footerbottom">
-        GNU Radio's Comprehensive Archive Network with <3 from GNU Radio team
+<div class="footerbottom text-center">
+  &copy; 2015 Ravi Sharan and Nathan West<br>
+  This page is licensed under a <a href="http://creativecommons.org/licenses/by-nd/3.0/us/"> Creative Commons Attribution-NoDerivs 3.0 United States License</a>
 </div>
 </footer>
